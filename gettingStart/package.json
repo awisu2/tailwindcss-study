@@ -1,0 +1,14 @@
+{
+  "name": "gettingstart",
+  "version": "1.0.0",
+  "description": "[Installation: Tailwind CLI \\- Tailwind CSS](https://tailwindcss.com/docs/installation)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "awisu2",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  }
+}
