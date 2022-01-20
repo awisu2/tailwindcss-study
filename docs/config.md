@@ -16,27 +16,23 @@ module.exports = {
 }
 ```
 
+- デフォルト名: `tailwind.config.js` 自動読み込みされる
+- 重要なパラメータ
+  - content: 設定しないとビルドしても反映されない(対象ファイルで使われているクラスのみコンパイルしているかと思われる)
 - javascript で設定する場合: [Configuration \- Tailwind CSS](https://tailwindcss.com/docs/configuration#referencing-in-java-script)
-
-## ファイル生成
-
-通常は `npx tailwindcss init -p` が良さそう
-
-- `npx tailwindcss init` を実行すると生成される
-- `-p` オプションを付与すると _postcss.config.js_ も生成する
-- `-full` オプションを付与すると 全デフォルト値が設定された _tailwind.config.js_ が生成される([UNPKG \- tailwindcss](https://unpkg.com/browse/tailwindcss@3.0.15/stubs/defaultConfig.stub.js))
-
-## 別名
-
-ファイル自体の作成は自由で実行時に指定が必要
-
-- -c オプションで指定 `npx tailwindcss -c twconfig.js`
-- _postcss.config.js_ で指定する場合: `tailwindcss: { config: './twconfig.js' },`
+- ファイル生成補助
+  - 通常は `npx tailwindcss init -p` が良さそう
+  - `npx tailwindcss init` を実行すると生成される
+  - `-p` オプションを付与すると _postcss.config.js_ も生成する
+  - `-full` オプションを付与すると 全デフォルト値が設定された _tailwind.config.js_ が生成される([UNPKG \- tailwindcss](https://unpkg.com/browse/tailwindcss@3.0.15/stubs/defaultConfig.stub.js))
+- 別名で作成
+  - ファイル自体の作成は自由で実行時に指定が必要
+  - -c オプションで指定 `npx tailwindcss -c twconfig.js`
+  - _postcss.config.js_ で指定する場合: `tailwindcss: { config: './twconfig.js' },`
 
 ## 各パラメータ
 
-- [Content](https://tailwindcss.com/docs/content-configuration): tailwind のクラス名が含まれるファイルを指定 (ex: `'./pages/**/*.{html,js}'`)
-  - 指定しなかった場合、ビルドしても style が反映されなかったので、使われているクラスのみコンパイルしているかと思われる
+- [Content](https://tailwindcss.com/docs/content-configuration): [重要] tailwind のクラス名が含まれるファイルを指定 (ex: `'./pages/**/*.{html,js}'`)
 - [Theme](https://tailwindcss.com/docs/configuration#theme): tailwind class の追加及び既存設定のカスタム設定
 - [Plugins](https://tailwindcss.com/docs/plugins): css の新しいスタイルの登録や、js 用いての設定が可能になる
   - [official Plugins](https://tailwindcss.com/docs/plugins#official-plugins)
