@@ -19,7 +19,7 @@
 - [Resources](https://tailwindcss.com/resources): tailwindcss でのデザインをもっと良くするあれこれ追加要素
 - [comunity](https://github.com/tailwindlabs/tailwindcss/discussions): github discussions
 
-## .contents
+## contents
 
 - [getting start](./gettingStart): とりあえずやってみる
 - [postcss](./withpostcss): postcss を利用して実行
