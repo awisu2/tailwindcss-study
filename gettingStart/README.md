@@ -2,7 +2,10 @@
 
 [Installation: Tailwind CLI \- Tailwind CSS](https://tailwindcss.com/docs/installation)
 
-## try
+- 本番用ビルド: --minifyを追加 (`npx tailwindcss -o build.css --minify` )
+- watch: --watchを追加 (`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`)
+
+## getting start
 
 ```bash
 npm init
