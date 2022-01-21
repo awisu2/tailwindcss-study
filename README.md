@@ -6,6 +6,10 @@
 - 基本動作: 最初から css があるのではなく、javascript によって、対象 html ファイルを確認し必要な css を出力する(利用しない class は出力しない)
 - postcss は使ったほうがいい?: 使ったほうが良さそう。tailwindcss 単体でも実行できるが 公式ドキュメントでもちょいちょい出てきて、利用前提っぽい感じがする
   - [awisu2/postcss\-study](https://github.com/awisu2/postcss-study)
+- これ大量に class 書かないといけないんだけど？
+  - [Reusing Styles \- Tailwind CSS](https://tailwindcss.com/docs/reusing-styles)
+  - js やフレームワークでコンポーネントを分けることが推奨されている。
+  - @apply により一つのクラスにまとめることが可能
 
 ## tailwindcss 公式ドキュメントの大項目
 
