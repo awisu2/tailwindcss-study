@@ -18,6 +18,13 @@
     - custom: [Grid Template Columns \- Tailwind CSS](https://tailwindcss.com/docs/grid-template-columns#customizing-your-theme)
       - 例: `grid-cols-[repeat(auto-fill,_minmax(200px,_1fr))]`
         - `[]` の中の部分がカスタム \_ はスペースの代わり
+  - [flex](https://tailwindcss.com/docs/flex)
+    - 子要素用
+      - [flex](https://tailwindcss.com/docs/flex) flex-grow, flex-shrink, flex-basis をまとめて指定 `flex-{1|auto|initial|none}`
+      - [flex-basis](https://tailwindcss.com/docs/flex-basis) `basis-{0-96}`
+      - [flex-grow](https://tailwindcss.com/docs/flex-grow) `grow{-0}` or `grow-[{num}]`
+      - [flex-shrink](https://tailwindcss.com/docs/flex-shrink) `shrink{-0}` or `shrink-[{num}]`
+  - [gap](https://tailwindcss.com/docs/gap) `gap{-x|y}-{0-96}` 細かいサイズも有り
 - [border](https://tailwindcss.com/docs/border-radius)
   - width: `border{-position}{-size}`
     - size: `border-{0|2|4|8}`
@@ -59,7 +66,6 @@
   - 先頭に`-`を付与するとサイズがマイナスになる
   - size: 1-96, auto, 1/2, 2/4, 3/4, full
 - [visibility \- Tailwind CSS](https://tailwindcss.com/docs/visibility) dom 上は存在したまま表示の on/off をコントロール `{visible|invisible}`
-- [flex \- Tailwind CSS](https://tailwindcss.com/docs/flex)
 
 ## style の実態が少し複雑な指定になるもの
 
