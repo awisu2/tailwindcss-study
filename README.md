@@ -32,5 +32,6 @@
 ### ./docs
 
 - [Editor Setup \- Tailwind CSS](https://tailwindcss.com/docs/editor-setup)
+- [commands](./docs/commands.md): tailwindcss コマンドまとめ
 - [cheatsheet](./docs/cheatsheet.md): チートシート
 - [config](./docs/config.md): tailwind.config.js について
