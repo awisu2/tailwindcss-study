@@ -3,6 +3,7 @@
 ## tips
 
 - おすすめ事項
+  - postcss を利用: [awisu2/postcss\-study](https://github.com/awisu2/postcss-study)
   - フォントの追加: [Font Family \- Tailwind CSS](https://tailwindcss.com/docs/font-family)
     - デフォルトのフォントだと文字の厚みがたりなかったりするので、[Google Fonts](https://fonts.google.com/)などを利用するほうが良さそう
     - また、tailwindcss では `font-sans` などがデフォルトで用意されているので拡張して使用するのが良さそう
@@ -34,18 +35,35 @@
 ```bash
 # パッケージインストール
 npm install -D tailwindcss postcss-cli cssnano postcss-import postcss-nesting autoprefixer
+# configファイルの作成(tailwindcss.config.jsのdefaultを知りたい場合は -f を追加)
+npx tailwindcss -p
+
+# 変換(下記設定後)
+npx postcss src/*.scss -d postcss_dist
 ```
 
 _postcss.config.js_
 
 ```js
-module.exports = {
-  plugins: [
+const isProduction = process.env.NODE_ENV === 'production'
+
+function getPlugins() {
+  let plugins = [
     require('postcss-import'),
     require('tailwindcss/nesting'),
     require('tailwindcss'),
     require('autoprefixer')
   ]
+  if (isProduction) {
+    const prodPlugins = [require('cssnano')]
+    plugins = [].concat(plugins, prodPlugins)
+  }
+
+  return plugins
+}
+
+module.exports = {
+  plugins: getPlugins()
 }
 ```
 
