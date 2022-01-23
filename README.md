@@ -4,12 +4,8 @@
 
 - tailwindcss とは: class ベースの css テンプレート
 - 基本動作: 最初から css があるのではなく、javascript によって、対象 html ファイルを確認し必要な css を出力する(利用しない class は出力しない)
-- postcss は使ったほうがいい?: 使ったほうが良さそう。tailwindcss 単体でも実行できるが 公式ドキュメントでもちょいちょい出てきて、利用前提っぽい感じがする
-  - [awisu2/postcss\-study](https://github.com/awisu2/postcss-study)
-- これ大量に class 書かないといけないんだけど？
-  - [Reusing Styles \- Tailwind CSS](https://tailwindcss.com/docs/reusing-styles)
-  - js やフレームワークでコンポーネントを分けることが推奨されている。
-  - @apply により一つのクラスにまとめることが可能
+- [roundup](./docs/roundup.md): コピペセットアップ、よくあるトラブルのまとめ
+- [cheatsheet](./docs/cheatsheet.md): tailwindcss で利用できる class の一覧まとめ
 
 ## tailwindcss 公式ドキュメントの大項目
 
@@ -32,7 +28,7 @@
 ### ./docs
 
 - [Editor Setup \- Tailwind CSS](https://tailwindcss.com/docs/editor-setup)
-- [roundup]('./docs/roundup.md): 新規セットアップ方法や、ある程度わかってきてのおすすめ事項まとめ
+- [roundup](./docs/roundup.md): 新規セットアップ方法や、ある程度わかってきてのおすすめ事項まとめ
 - [commands](./docs/commands.md): tailwindcss コマンドまとめ
 - [cheatsheet](./docs/cheatsheet.md): tailwindcss で利用できる class の一覧まとめ
 - [config](./docs/config.md): tailwind.config.js について
