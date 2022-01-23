@@ -1,6 +1,6 @@
 # cheatsheet
 
-基本的な設定は class に指定することで反映される
+tailwindcss で利用できる class の一覧まとめ
 
 公式サンプル: [Utility\-First Fundamentals \- Tailwind CSS](https://tailwindcss.com/docs/utility-first)
 

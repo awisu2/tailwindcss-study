@@ -32,6 +32,7 @@
 ### ./docs
 
 - [Editor Setup \- Tailwind CSS](https://tailwindcss.com/docs/editor-setup)
+- [roundup]('./docs/roundup.md): 新規セットアップ方法や、ある程度わかってきてのおすすめ事項まとめ
 - [commands](./docs/commands.md): tailwindcss コマンドまとめ
-- [cheatsheet](./docs/cheatsheet.md): チートシート
+- [cheatsheet](./docs/cheatsheet.md): tailwindcss で利用できる class の一覧まとめ
 - [config](./docs/config.md): tailwind.config.js について
