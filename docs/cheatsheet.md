@@ -66,6 +66,7 @@ tailwindcss で利用できる class の一覧まとめ
   - 先頭に`-`を付与するとサイズがマイナスになる
   - size: 1-96, auto, 1/2, 2/4, 3/4, full
 - [visibility \- Tailwind CSS](https://tailwindcss.com/docs/visibility) dom 上は存在したまま表示の on/off をコントロール `{visible|invisible}`
+- [background Color](https://tailwindcss.com/docs/background-color) `bg-{color}{/opacity}`
 
 ## style の実態が少し複雑な指定になるもの
 
