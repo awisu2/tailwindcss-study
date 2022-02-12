@@ -27,7 +27,7 @@ tailwindcss で利用できる class の一覧まとめ
   - [gap](https://tailwindcss.com/docs/gap) `gap{-x|y}-{0-96}` 細かいサイズも有り
 - [border](https://tailwindcss.com/docs/border-radius)
   - width: `border{-position}{-size}`
-  　- 1px: `border`
+    - 1px: `border`
     - size: `border-{0|2|4|8}`
       - 単位は px 指定したサイズそのままの px が割当
     - position: `border-{t|r|b|l|x|y}`
